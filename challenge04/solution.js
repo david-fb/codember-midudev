@@ -1,5 +1,5 @@
 const isValidPassword = (password) => {
-    let orderedPassword = password.toString().split('').reverse().sort().join('');
+    let orderedPassword = password.toString().split('').sort().join('');
     return password.toString() === orderedPassword;
 }
 
