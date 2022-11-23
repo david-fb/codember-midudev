@@ -1,9 +1,9 @@
-const isValidNumber = (number) => {
-    let numberString = number.toString().split('').reverse();
+const isValidPassword = (password) => {
+    let passwordDigits = password.toString().split('').reverse().map(Number);
     let isValid = true;
 
-    for (let i=0; i < numberString.length; i++){
-        if(Number(numberString[i]) < Number(numberString[i+1])) {
+    for (let i=0; i < passwordDigits.length - 1; i++){
+        if(passwordDigits[i] < passwordDigits[i+1]) {
             isValid = false;
             break;
         }
@@ -11,20 +11,24 @@ const isValidNumber = (number) => {
     return isValid;
 }
 
-const MIN = 11098;
-const MAX = 98123;
-let numbers = [];
+const RANGE = {
+    min: 11098,
+    max: 98123
+}
+let passwords = [];
 
-for(let i = MIN; i <= MAX; i++){
+for(let pwd = RANGE.min; pwd <= RANGE.max; pwd++){
 
-    if(i.toString().match(/55/) == null) continue;
+    if(pwd.toString().match(/55/) == null) continue;
 
-    let valid = isValidNumber(i);
-    if(!valid) continue;
-    numbers.push(i);
+    let validPassword = isValidPassword(pwd);
+    if(!validPassword) continue;
+
+    passwords.push(pwd);
+
 }
 
-//console.log("numbers", numbers);
-console.log("length =>", numbers.length);
-console.log("position 55 =>", numbers[55]);
-console.log(`submit => submit ${numbers.length}-${numbers[55]}`)
+//console.log("passwords", passwords);
+console.log("length =>", passwords.length);
+console.log("position 55 =>", passwords[55]);
+console.log(`submit => submit ${passwords.length}-${passwords[55]}`)
