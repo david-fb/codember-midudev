@@ -17,7 +17,7 @@ Nos ha puesto algunas ejemplos:
 
 Dice que el password está entre los números 11098 y 98123. ¿Le podemos decir cuantos números cumplen esas reglas dentro de ese rango?
 
-Cómo enviar la solución
+### Cómo enviar la solución
 Envía la solución con el comando submit, y el número de passwords que cumplen el criterio junto con el password que está en el índice 55 de la lista de passwords válidos, separado por un guión.
 
 Por ejemplo, para 87 resultados y el password 35522 en la posición 55 sería:
