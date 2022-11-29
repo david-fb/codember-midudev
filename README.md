@@ -16,6 +16,7 @@ JavaScript
 | 2 | [¡Atrapa a esos ciber criminales!](/challenge02/) |
 | 3 | [La zebra de colores](/challenge03/) |
 | 4 | [Encuentra la contraseña de tu amigo](/challenge04/) |
+| 5 | [Battle Royale de frameworks y bibliotecas](/challenge05/) |
 
 
 ## Instalación
